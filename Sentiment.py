@@ -13,7 +13,7 @@ auth.set_access_token(access_token, access_token_secret)
 #creating an API variable can allow us to create, delete, search for tweets
 api = tweepy.API(auth)
 
-public_tweets = api.search('Trumo')
+public_tweets = api.search('CSUN')
 
 for tweet in public_tweets:
 	print(tweet.text)
